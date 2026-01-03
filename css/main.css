@@ -166,7 +166,7 @@ figure {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: flex-start;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -178,42 +178,64 @@ figure {
 
 
 .welcome {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
   font-size: 1.1rem;
-  margin-top: 60px;
+  margin-top: 73px;
   flex: 0.9;
   text-align: left;
 }
 
 .webTech {
+  max-width: 480px;
   flex: 0.8;
   font-family: 'Poppins', sans-serif;
   font-size: 1.2em;
   color: #fff;
   text-align: center;
-  margin-right: 20px;
   align-items: flex-start;
-  margin-left: auto;
+  margin-left: 100px;
+  margin-top: -10px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.webTech h3 {
+  margin: 6px 0 2px;
+}
+
+.webTech .iconsContainer {
+  margin-bottom: 6px; /* o 0 si los quieres pegados */
 }
 
 .webTech p {
-  font-size: 1.2em;
-  margin-bottom: 10px;
+  font-size: 1.1em;
+  margin-bottom: 0px;
 }
 
+.techGroup.adicional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+}
+
+.techGroup.adicional .iconsContainer {
+    display: flex;
+    justify-content: center;
+}
 .iconsContainer {
-  padding: 2.5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-left: 20px;
+  gap: 1px; 
+  padding: 0px;
+  margin-top: 1px;
+  justify-items: center;
+  align-items: center;
 }
 
 .iconsContainer .icon {
-  padding: 2%;
+  padding: 1%;
   text-align: center;
   transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -224,12 +246,13 @@ figure {
 }
 
 .icon {
-  padding: 2%;
+  padding: 1%;
   text-align: center;
 }
 
 .icon p {
-  margin: 5px 0 0;
+  margin-top: 1px;
+  font-size: 14px;
 }
 
 .icon img {
@@ -247,19 +270,19 @@ figure {
 
 .bio-image {
   flex: 1;
-  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  margin-right: 20px; 
 }
 
 .bio-image img {
   border-radius: 50%;
-  width: 350px; /* Ajusta el tamaño de la imagen según tus preferencias */
+  width: 350px;
   height: 350px;
-  object-fit: cover; /* Asegura que la imagen se recorte correctamente si no es cuadrada */
-  transition: transform 0.3s ease; /* Transición para el efecto de escala al hacer hover */
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
 }
 
 .bio-image img:hover {
-  transform: scale(1.1); /* Efecto de escala al hacer hover */
+  transform: scale(1.1); 
 }
 
 .bio-text {
@@ -269,19 +292,19 @@ figure {
 }
   
 .bio-text strong {
-  color: #04cde7; /* Color del título "Sobre Mi" */
+  color: #04cde7;
   font-size: 1.5em;
   display: block;
-  margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+  margin-bottom: 10px; 
 }
 
-/* Efecto de aparición al hacer scroll */
+
 .bio {
   color: #fff;
   text-align: center;
-  margin: 1px 0; /* Espacio arriba y abajo de la biografía */
+  margin: 1px 0; 
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(10px);
   transition: opacity 0.9s ease, transform 0.9s ease;
 }
 
@@ -639,12 +662,12 @@ figure {
   margin-top: 40px;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
 .github-link p {
   font-size: 22px;
-  color: #ffffff; /* Texto color gris oscuro */
+  color: #ffffff; 
   margin: 0;
   padding-bottom: 10px;
   font-family: 'Rubik', sans-serif;
@@ -652,16 +675,16 @@ figure {
 
 .github-link a {
   font-size: 22px;
-  color: #04cde7; /* Color azul para el enlace */
+  color: #04cde7; 
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease; /* Transición suave para el color */
+  transition: color 0.3s ease; 
 }
 
 .github-link a:hover {
-  color: #2612dbfa; /* Color naranja al pasar el mouse */
-  text-decoration: underline; /* Subrayado en el hover */
+  color: #2612dbfa;
+  text-decoration: underline;
 }
 
-/*# sourceMappingURL=main.css.map */
+
 

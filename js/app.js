@@ -122,11 +122,16 @@ function isInViewport(element) {
   );
 }
 
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+
+  return rect.top <= window.innerHeight * 0.88;
+}
+
 // Función para manejar el scroll y mostrar/ocultar la sección .bio
 function handleScroll() {
   var bioSection = document.querySelector('.bio');
 
-  // Verificar si la sección .bio está en el viewport
   if (isInViewport(bioSection)) {
     bioSection.classList.add('show');
   } else {
@@ -134,8 +139,8 @@ function handleScroll() {
   }
 }
 
-// Detectar el scroll y ejecutar la función handleScroll
+// Detectar el scroll
 window.addEventListener('scroll', handleScroll);
 
-// Ejecutar handleScroll al cargar la página para verificar inicialmente la visibilidad
+// Ejecutar al cargar
 handleScroll();
