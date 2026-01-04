@@ -144,3 +144,4 @@ window.addEventListener('scroll', handleScroll);
 
 // Ejecutar al cargar
 handleScroll();
+

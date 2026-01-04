@@ -687,4 +687,132 @@ figure {
 }
 
 
+/* ======== RESPONSIVE FIX REAL ======== */
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+    overflow-x: hidden;
+  }
+
+  .header {
+    margin-top: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .portfolio_link,
+  .resume_link {
+    justify-content: center;
+    font-size: 18px;
+  }
+
+  .logo img {
+    width: 60px;
+  }
+
+  /* HERO */
+  .hero {
+    height: auto;
+    padding: 40px 15px;
+  }
+
+  .welcomeSection {
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .welcome {
+    text-align: center;
+    margin-top: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+
+    
+  }
+
+  /* TECNOLOGÍAS */
+  .webTech {
+    margin: 20px 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* BIO */
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-image img {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 20px;
+  }
+
+  .bio-text {
+    font-size: 1.1rem;
+  }
+
+  /* PROYECTOS */
+  .project {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  .project-details,
+  .project-imageContainer {
+    width: 100%;
+  }
+
+  .project-image {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  /* CONTACTO */
+  .contact-item a {
+    font-size: 1.1rem;
+  }
+
+  /* PARTÍCULAS MÁS SUAVES */
+  #particles-js {
+    opacity: 0.3;
+  }
+  
+  .iconsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  
+
+  .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .icon img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+  }
+
+  .icon p {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
 
