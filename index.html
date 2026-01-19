@@ -17,15 +17,19 @@
     <div id="particles-js"></div>
 
     <div class="bigContainer">
-
         <header class="header">
             <div class="header-left">
                 <figure class="logo">       
                     <img src="img/Ipn.png" alt="IpnLogo">
                 </figure>
                 
-                <div class="lang-switch" onclick="toggleLanguage()">
-                    <span id="lang-btn-text">🇺🇸 EN</span>
+                <div class="lang-container" style="display: flex; gap: 10px;">
+                    <div class="lang-switch" onclick="setLanguage('es')" id="btn-es">
+                        <span>🇲🇽 Español</span>
+                    </div>
+                    <div class="lang-switch" onclick="setLanguage('en')" id="btn-en">
+                        <span>🇺🇸 English</span>
+                    </div>
                 </div>
             </div>
 
@@ -35,8 +39,13 @@
                     <span data-es="Portafolio" data-en="Portfolio">Portafolio</span>
                 </a>  
                 
-                <a class="resume_link" href="resources/Benavides_Iracheta_Victor_Hugo_CV.pdf" download>
-                    <span data-es="CV" data-en="Resume">CV</span> 
+                <a class="resume_link" href="resources/CV_Victor_Benavides_Ing_IA.pdf" download>
+                    <span data-es="CV (ES)" data-en="CV (ES)">CV</span> 
+                    <img src="https://img.icons8.com/nolan/64/open-resume.png"/>
+                </a>
+
+                <a class="resume_link" href="resources/Resume_CV_Victor_Benavides.pdf" download>
+                    <span data-es="Resume (EN)" data-en="Resume (EN)">Resume</span> 
                     <img src="https://img.icons8.com/nolan/64/open-resume.png"/>
                 </a>
             </nav>
@@ -45,10 +54,9 @@
         <section class="hero animate__animated animate__fadeIn">
             <div class="welcomeSection">
                 <div class="welcome">
-                    
-                    <h1 data-es="<span class='greeting'>Hola!</span><br /> Mi nombre es <strong> Victor Benavides</strong>,<br/>Ingeniero en Inteligencia Artificial <br /> especializado en <br /> <span class='highlight-text'>Optimización de Procesos y Análisis de Datos Industriales</span>" 
-                        data-en="<span class='greeting'>Hello!</span><br /> I'm <strong> Victor Benavides</strong>,<br/> AI Engineer <br /> specialized in <br /> <span class='highlight-text'>Process Optimization and Industrial Data Analysis</span>">
-                        <span class='greeting'>Hola!</span><br /> Mi nombre es <strong> Victor Benavides</strong>,<br/>Ingeniero en Inteligencia Artificial <br /> especializado en <br /> <span class="highlight-text">Optimización de Procesos y Análisis de Datos Industriales</span>
+                    <h1 data-es="<span class='greeting'>Hola!</span><br /> Mi nombre es <strong> Victor Benavides</strong>,<br/>Ingeniero en Inteligencia Artificial, Analista y Desarrollador <br /> especializado en <br /> <span class='highlight-text'>Optimización de Procesos y Análisis de Datos Industriales</span>" 
+                        data-en="<span class='greeting'>Hello!</span><br /> I'm <strong> Victor Benavides</strong>,<br/> AI Engineer, Data Analyst and Developer <br /> specialized in <br /> <span class='highlight-text'>Process Optimization and Industrial Data Analysis</span>">
+                        <span class='greeting'>Hola!</span><br /> Mi nombre es <strong> Victor Benavides</strong>,<br/>Ingeniero en Inteligencia Artificial, Analista y Desarrollador <br /> especializado en <br /> <span class="highlight-text">Optimización de Procesos y Análisis de Datos Industriales</span>
                     </h1>
                 </div>
         
@@ -56,7 +64,6 @@
                     <p class="tech-title">
                         <strong data-es="Tecnologías con las que trabajo:" data-en="Tech Stack & Skills:">Tecnologías con las que trabajo:</strong>
                     </p>
-
                     <div class="tech-grid">
                         <div class="techGroup">
                             <h3>IA & Data</h3>
@@ -66,7 +73,6 @@
                                 <div class="icon"><img src="https://img.icons8.com/color/48/000000/github.png" alt="GitHub"><p>GitHub</p></div>
                             </div>
                         </div>
-
                         <div class="techGroup">
                             <h3>Enterprise</h3>
                             <div class="iconsContainer">
@@ -75,7 +81,6 @@
                                 <div class="icon"><img src="resources/SQL.png" alt="SQL"><p>SQL</p></div>
                             </div>
                         </div>
-
                         <div class="techGroup">
                             <h3>Web & Mobile</h3>
                             <div class="iconsContainer">
@@ -84,7 +89,6 @@
                                 <div class="icon"><img src="resources/Android.png" alt="Android"><p>Android</p></div>
                             </div>
                         </div>
-
                         <div class="techGroup">
                             <h3 data-es="Adicional" data-en="Additional">Adicional</h3>
                             <div class="iconsContainer">
@@ -102,20 +106,17 @@
                 <img src="resources/bio.png" alt="MiFoto">
               </div>
               <div class="bio-text">
-
                 <strong data-es="Sobre Mí" data-en="About Me">Sobre Mí</strong>
                 <p style="text-align: center;" 
-                   data-es="Hola, soy Victor Benavides, Ingeniero en Inteligencia Artificial egresado del Instituto Politécnico Nacional. Tengo experiencia práctica en el sector manufacturero utilizando SAP y Excel para el control de datos y procesos. Cuento con conocimientos en el desarrollo de aplicaciones móviles (Kotlin, Dart) y web, además del manejo de lenguajes como Python, C++ y SQL para la implementación de proyectos de IA. Actualmente sigo ampliando mis habilidades en el desarrollo Backend y poseo un nivel de inglés B2, lo que me permite trabajar en entornos técnicos bilingües."
-                   data-en="Hi, I'm Victor Benavides, an AI Engineer graduated from Instituto Politécnico Nacional. I have hands-on experience in the manufacturing sector using SAP and Excel for data control and process optimization. I possess strong skills in mobile (Kotlin, Dart) and web development, along with proficiency in Python, C++, and SQL for AI implementation. I am currently expanding my Backend development skills and hold a B2 English level, allowing me to thrive in bilingual technical environments.">
-                   Hola, soy Victor Benavides, Ingeniero en Inteligencia Artificial egresado del Instituto Instituto Politécnico Nacional. Tengo experiencia práctica en el sector manufacturero utilizando SAP y Excel para el control de datos y procesos. Cuento con conocimientos y experiencia en Ciencia de Datos y Desarrollo de Software, así como también desarrollo de aplicaciones móviles (Kotlin, Dart) y web, además del manejo de lenguajes como Python, C++ y SQL para la implementación de proyectos de IA. Actualmente sigo ampliando mis habilidades en el desarrollo Backend y poseo un nivel de inglés B2, lo que me permite trabajar en entornos técnicos bilingües. 
+                   data-es="Hola, soy Victor Benavides, Ingeniero en Inteligencia Artificial, Analista y Desarrollador. Tengo experiencia práctica en el sector manufacturero utilizando SAP y Excel para el control de datos y procesos. Cuento con conocimientos en el desarrollo de aplicaciones móviles (Kotlin, Dart) y web, además del manejo de lenguajes como Python, C++ y SQL para la implementación de proyectos de IA. Actualmente sigo ampliando mis habilidades en el desarrollo Backend y poseo un nivel de inglés B2, lo que me permite trabajar en entornos técnicos bilingües."
+                   data-en="Hi, I'm Victor Benavides, an AI Engineer, Data Analyst and Developer. I have hands-on experience in the manufacturing sector using SAP and Excel for data control and process optimization. I possess strong skills in mobile (Kotlin, Dart) and web development, along with proficiency in Python, C++, and SQL for AI implementation. I am currently expanding my Backend development skills and hold a B2 English level, allowing me to thrive in bilingual technical environments.">
+                   Hola, soy Victor Benavides, Ingeniero en Inteligencia Artificial, Analista y Desarrollador. Tengo experiencia práctica en el sector manufacturero utilizando SAP y Excel para el control de datos y procesos. Cuento con conocimientos en el desarrollo de aplicaciones móviles (Kotlin, Dart) y web, además del manejo de lenguajes como Python, C++ y SQL para la implementación de proyectos de IA. Actualmente sigo ampliando mis habilidades en el desarrollo Backend y poseo un nivel de inglés B2, lo que me permite trabajar en entornos técnicos bilingües.
                 </p>
             </div>
             </div>
-          </section>
+        </section>
 
-          
-          
-          <div class="contact-section">
+        <div class="contact-section">
             <h2 data-es="Contacto" data-en="Contact">Contacto</h2>
             <div class="contact-item">
                 <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
@@ -135,7 +136,6 @@
             </div>
         </div>
 
-    
         <section id="portfolio" class="portfolio">
             <div class="container">                
                 <hr> 
@@ -143,11 +143,30 @@
                 
                 <article class="project animate-on-scroll">
                     <div class="project-details">
+                        <h3 class="project-title" data-es="AynovaX Prime Twin" data-en="AynovaX Prime Twin">AynovaX Prime Twin</h3>
+                        <h4 class="project-subtitle" style="color: #ffb300;" data-es="Mantenimiento Predictivo & Digital Twin" data-en="Predictive Maintenance & Digital Twin">Mantenimiento Predictivo & Digital Twin</h4>
+                        <a class="project-url" href="https://github.com/Victorbenavides/AynovaX-Prime-Twin-Predictive-Maintenance" target="_blank" data-es="Ver Código" data-en="View Code">Ver Código</a>
+                        <p class="project-description" style="text-align: justify;" 
+                           data-es="Dashboard de monitoreo industrial con simulación de sensores en tiempo real. Optimiza la toma de decisiones mediante la exportación automatizada de reportes en PDF/CSV y visualización de KPIs críticos para prevenir paros de línea." 
+                           data-en="Industrial monitoring dashboard with real-time sensor simulation. Optimizes decision-making through automated PDF/CSV report generation and critical KPI visualization to prevent production downtime.">
+                           Dashboard de monitoreo industrial con simulación de sensores en tiempo real. Optimiza la toma de decisiones mediante la exportación automatizada de reportes en PDF/CSV y visualización de KPIs críticos.
+                        </p>
+                        <ul style="text-align: justify;">
+                            <li data-es="⚙️ Backend: FastAPI & Python" data-en="⚙️ Backend: FastAPI & Python">⚙️ Backend: FastAPI & Python</li>
+                            <li data-es="💻 Frontend: React & Dashboards Interactivos" data-en="💻 Frontend: React & Interactive Dashboards">💻 Frontend: React & Interactive Dashboards</li>
+                            <li data-es="📊 Datos: Simulación de Sensores Industriales" data-en="📊 Data: Industrial Sensor Simulation">📊 Data: Industrial Sensor Simulation</li>
+                        </ul>
+                    </div>
+                    <figure class="project-imageContainer">
+                        <img class="project-image clickable-image" src="img/prime.png" alt="AynovaX Prime Twin Dashboard" loading="lazy" style="border-bottom: 2px solid #ffb300;">
+                    </figure>
+                </article>
+
+                <article class="project animate-on-scroll">
+                    <div class="project-details">
                         <h3 class="project-title" data-es="AynovaX Intelligence Suite" data-en="AynovaX Intelligence Suite">AynovaX Suite Analytics</h3>
                         <h4 class="project-subtitle" style="color: #00f900;" data-es="Enterprise Analytics & AI Forecasting" data-en="Enterprise Analytics & AI Forecasting">Enterprise Analytics & AI Forecasting</h4>
-                        
                         <a class="project-url" href="https://github.com/Victorbenavides/AynovaX-Intelligence-Suite-Enterprise-Analytics" target="_blank" data-es="Ver Código" data-en="View Code">Ver Código</a>
-                        
                         <p class="project-description" style="text-align: justify;" 
                            data-es="Plataforma de Business Intelligence diseñada para Retail. Implementé un pipeline ETL que alimenta modelos de <strong>Machine Learning No Supervisado (K-Means)</strong> para segmentar clientes y algoritmos de <strong>Series de Tiempo (Holt-Winters)</strong> para predecir ventas futuras con alta precisión." 
                            data-en="Enterprise Business Intelligence platform for Retail. I implemented an ETL pipeline powering <strong>Unsupervised Machine Learning (K-Means)</strong> models for customer segmentation and <strong>Time-Series algorithms (Holt-Winters)</strong> to forecast future revenue with high accuracy.">
@@ -168,9 +187,7 @@
                     <div class="project-details">
                         <h3 class="project-title" data-es="AynovaX Enterprise" data-en="AynovaX Enterprise">AynovaX Suite Intelligence</h3>
                         <h4 class="project-subtitle" style="color: #64b5f6;" data-es="RAG & Document Intelligence" data-en="RAG & Document Intelligence">RAG & Document Intelligence</h4>
-                        
                         <a class="project-url" href="https://github.com/Victorbenavides/AynovaX-Enterprise-Private-AI-Document-Analyst" target="_blank" data-es="Ver Repositorio" data-en="View Repository">Ver Repositorio</a>
-                        
                         <p class="project-description" style="text-align: justify;" 
                            data-es="Sistema de análisis documental potenciado por LLMs. Utiliza técnicas de <strong>RAG (Retrieval-Augmented Generation)</strong> para permitir a las empresas 'chatear' con manuales técnicos y reportes PDF, extrayendo información clave y resúmenes automáticos." 
                            data-en="Document analysis system powered by LLMs. Uses <strong>RAG (Retrieval-Augmented Generation)</strong> techniques to allow enterprises to 'chat' with technical manuals and PDF reports, extracting key information and generating automated summaries.">
@@ -191,13 +208,11 @@
                     <div class="project-details">
                         <h3 class="project-title" data-es="OmniScale POS Ecosystem" data-en="OmniScale POS Ecosystem">OmniScale POS Ecosystem</h3>
                         <h4 class="project-subtitle" style="color: #d500f9;" data-es="Scalable Architecture & Licensing System" data-en="Scalable Architecture & Licensing System">Scalable Architecture & Licensing System</h4>
-                        
                         <a class="project-url" href="https://github.com/Victorbenavides/Core-POS-Module-Modular-Enterprise" target="_blank" style="color:#d500f9" data-es="Arquitectura de Software" data-en="Software Architecture">Arquitectura de Software</a>
-                        
                         <p class="project-description" style="text-align: justify;" 
                            data-es="Sistema integral de Punto de Venta diseñado para escalar. No es solo una caja registradora; es una <strong>arquitectura modular</strong> que soporta gestión de licencias, control de inventarios multi-sucursal y módulos adaptables (Agendas, E-commerce, Restaurantes). Desarrollado con enfoque en rendimiento y experiencia de usuario." 
                            data-en="Comprehensive Point of Sale system designed for scale. More than just a cash register, it's a <strong>modular architecture</strong> supporting licensing management, multi-branch inventory control, and adaptable modules (Agendas, E-commerce, Restaurants). Built with a focus on performance and UX.">
-                           Sistema integral de Punto de Venta diseñado para escalar. No es solo una caja registradora; es una <strong>arquitectura modular</strong> que soporta gestión de licencias, control de inventarios multi-sucursal y módulos adaptables.
+                           Sistema integral de Punto de Venta diseñado para escalar. No es solo una caja registradora; es una <strong>arquitectura modular</strong> que soporta gestión de licencias, control de inventarios multi-sucursal y módulos adaptables (Agendas, E-commerce, Restaurantes).
                         </p>
                         <ul style="text-align: justify;">
                             <li data-es="📱 Tech: Flutter & Dart (Cross-Platform)" data-en="📱 Tech: Flutter & Dart (Cross-Platform)">📱 Tech: Flutter & Dart (Cross-Platform)</li>
@@ -209,7 +224,6 @@
                         <img class="project-image clickable-image" src="img/pos.png" alt="POS System" loading="lazy" style="border-bottom: 2px solid #d500f9;">
                     </figure>
                 </article>
-                
             </div>
 
             <div class="github-link">
@@ -219,10 +233,10 @@
                 </p> 
                 <a href="https://github.com/Victorbenavides" target="_blank">GitHub</a>.
             </div>
-            
         </section>
+
         <footer class="footer">         
-            <p1>Victor Benavides</p1>
+            <p>Victor Benavides</p>
             <p>&copy; 2026</p>
         </footer>
     </div>
@@ -235,28 +249,20 @@
 
     <script src="js/particles.min.js"></script>
     <script src="js/app.js"></script>
-    
     <script>
         let currentLang = 'es'; 
-
-        function toggleLanguage() {
-            if (currentLang === 'es') {
-                currentLang = 'en';
-                document.getElementById('lang-btn-text').innerText = '🇲🇽 ES';
-            } else {
-                currentLang = 'es';
-                document.getElementById('lang-btn-text').innerText = '🇺🇸 EN'; 
-            }
-
+        function setLanguage(lang) {
+            currentLang = lang;
             const elements = document.querySelectorAll('[data-es]');
-            
             elements.forEach(el => {
                 const newText = el.getAttribute(`data-${currentLang}`);
-                if (newText) {
-                    el.innerHTML = newText;
-                }
+                if (newText) el.innerHTML = newText;
             });
+            // Estilo visual botones activos
+            document.getElementById('btn-es').style.opacity = (lang === 'es') ? '1' : '0.5';
+            document.getElementById('btn-en').style.opacity = (lang === 'en') ? '1' : '0.5';
         }
+        setLanguage('es');
     </script>
 </body>
 </html>
